@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <FrameLayout
+            android:id="@+id/main_body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tab_bar"
+        style="@style/tab_bar"
+        android:layout_marginBottom="0dp"
+        >
+        <RelativeLayout
+            android:id="@+id/home_btn"
+            style="@style/tab_bar_btn">
+            <ImageView
+                android:id="@+id/tab_bar_home"
+                style="@style/tab_bar_btn_ImageView"
+                android:src="@drawable/home"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/collect_btn"
+            style="@style/tab_bar_btn">
+            <ImageView
+                android:id="@+id/tab_bar_collection"
+                style="@style/tab_bar_btn_ImageView"
+                android:src="@drawable/collection_2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/my_btn"
+            style="@style/tab_bar_btn">
+            <ImageView
+                android:id="@+id/tab_bar_my"
+                style="@style/tab_bar_btn_ImageView"
+                android:src="@drawable/my_2"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

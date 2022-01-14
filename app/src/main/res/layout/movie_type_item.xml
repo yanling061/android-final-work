@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/ll_movie_area"
+    >
+        <ImageView
+            android:id="@+id/movie_cover"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:src="@color/blue" />
+        <TextView
+            android:id="@+id/movie_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="少年的你"
+            android:textColor="@color/blue"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/release_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2020年"
+            android:textColor="@color/light_blue"
+            android:textSize="12sp"
+            />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+<!--    登陆状态页面-->
+    <RelativeLayout
+        android:id="@+id/rl_movie_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ListView
+            android:id="@+id/lv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:scrollbars="none"
+           />
+    </RelativeLayout>
+
+<!--    未登录状态-->
+    <LinearLayout
+        android:id="@+id/ll_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="visible">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cute"
+            />
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_btn"
+            android:layout_marginTop="-10dp"
+            android:text="去登录"
+            />
+    </LinearLayout>
+
+</LinearLayout>

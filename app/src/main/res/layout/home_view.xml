@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    android:orientation="vertical"
+    android:scrollbars="vertical">
+    <include layout="@layout/banner"/>
+    <LinearLayout
+        android:id="@+id/user_info"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_marginTop="-15dp"
+        >
+        <TextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/light_blue"
+            android:layout_weight="3"
+            android:layout_marginLeft="25dp"
+            />
+        <ImageView
+            android:id="@+id/iv_my_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/boy"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/search_box"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        >
+        <EditText
+            android:id="@+id/et_search"
+            style="@style/home_input"
+            android:drawableLeft="@drawable/search"
+            android:paddingLeft="20dp"
+            android:textSize="15sp"
+            android:hint="按名字、类型、演员搜索电影..."
+            android:imeOptions="actionSend"
+            android:singleLine="true"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="80dp"
+        android:numColumns="2"
+        android:scrollbars="none"
+        android:gravity="center"
+        android:verticalSpacing="20dp"
+        android:padding="10dp"
+        />
+
+
+
+
+</LinearLayout>
